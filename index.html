@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <title>Notificaciones 🔔 - Memory Travel 🚀​</title>
+    <link rel="icon" href="https://i.im.ge/2022/10/06/1HC4fS.logooo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Working version of https://dribbble.com/shots/14552329--Exploration-Task-Management-Dashboard -->
+<div class='app'>
+  <main class='project'>
+    <div class='project-info'>
+      <div class="portada">
+      <img class="portada" src="zyro-image (1).png"></div>
+      <h1 onclick="ocultar();">Notificaciones 🔔​</h1>
+      <div class='project-participants'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button class="deletee" id="delete" onclick="eliminar();" href=""><span class='textt'><i class="fas fa-trash" style="width:20px; height:20px; margin-top:5px; margin-left:-70px;"></i></span><span class="elimi" STYLE="MARGIN-LEFT:15PX;">Eliminar</span><span class="iconn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24">
+            <path
+              d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+          </svg></span></button>
+          
+        </div>
+    </div>
+    <div class='project-tasks'>
+      <div class='project-column'>
+        <div class='project-column-heading'>
+          <h2 class='project-column-heading__title' onclick="ocultar();">Todas en general</h2><button class='project-column-heading__options' onclick="mostrar();"><i class="fas fa-ellipsis-h"></i></button>
+        
+        </div>
+
+        <div id="meno" class="meno" onclick="mantener()">
+          <span class="icono2" id="icono2"><i class="fas fa-envelope-open" style="width:170px; height:170px;"></i></span>
+          <h1 class="central" id="central">Por el momento no hay notificaciones</h1>
+          
+        </div>
+
+        <div class='task' id='task' draggable='true'>
+          <div class='task__tags' ><span class='task__tag task__tag--copyright'>Copywriting</span><button class='task__options'></button></div>
+          <p>Konsep hero title yang menarik</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>3</span>
+            <span><i class="fas fa-paperclip"></i>7</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        
+                <div class='task' id='task1' draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--design'>UI Design</span><button class='task__options'></button></div>
+          <p>Icon di section our services</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>2</span>
+            <span><i class="fas fa-paperclip"></i>5</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        
+                <div class='task' id='task2'  draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--copyright'>Copywriting</span><button class='task__options'></button></div>
+          <p>Konsep hero title yang menarik</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>2</span>
+            <span><i class="fas fa-paperclip"></i>3</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+      </div>
+      <div class='project-column'><div class='project-column-heading'>
+          <h2 class='project-column-heading__title'>Videos y audios</h2><button class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+          
+        <div class='task' id="task3" draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--design'>UI Design</span><button class='task__options'></button></div>
+          <p>Replace lorem ipsum text in the final designs</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>5</span>
+            <span><i class="fas fa-paperclip"></i>5</span> 
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        
+        <div class='task' id='task4'  draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--illustration'>Illustration</span><button class='task__options'></button></div>
+          <p>Create and generate the custom SVG illustrations.</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>8</span>
+            <span><i class="fas fa-paperclip"></i>7</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        
+        <div class='task' id='task5'  draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--copyright'>Copywriting</span><button class='task__options'></button></div>
+          <p>Proof read the legal page and check for and loopholes</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>12</span>
+            <span><i class="fas fa-paperclip"></i>11</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        
+        <div class='task'id='task6'   draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--illustration'>Illustration</span><button class='task__options'></button></div>
+          <p>Create the landing page graphics for the hero slider.</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>4</span>
+            <span><i class="fas fa-paperclip"></i>8</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        
+        </div>
+      <div class='project-column'><div class='project-column-heading'>
+          <h2 class='project-column-heading__title'>Promociones</h2><button class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+          
+        <div class='task' id='task12'  draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--copyright'>Copywriting</span><button class='task__options'></button></div>
+          <p>Check the company we copied doesn't think we copied them.</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>4</span>
+            <span><i class="fas fa-paperclip"></i>0</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        <div class='task' id='task7'  draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--design'>UI Design</span><button class='task__options'></button></div>
+          <p>Design the about page.</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>0</span>
+            <span><i class="fas fa-paperclip"></i>5</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        <div class='task' id='task8'  draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--illustration'>Illustration</span><button class='task__options'></button></div>
+          <p>Move that one image 5px down to make Phil Happy.</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>2</span>
+            <span><i class="fas fa-paperclip"></i>2</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        </div>
+      <div class='project-column'><div class='project-column-heading'>
+          <h2 class='project-column-heading__title'>Equipo MT</h2><button class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        
+         <div class='task' id='task9' draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--illustration'>Illustration</span><button class='task__options'></button></div>
+          <p>Send Advert illustrations over to production company.</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>12</span>
+            <span><i class="fas fa-paperclip"></i>5</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        
+         <div class='task' id='task10' draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--illustration'>Illustration</span><button class='task__options'></button></div>
+          <p>Dawn wants to move the text 3px to the right.</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>3</span>
+            <span><i class="fas fa-paperclip"></i>7</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        
+         <div class='task' id='task11'  draggable='true'>
+          <div class='task__tags'><span class='task__tag task__tag--copyright'>Copywriting</span><button class='task__options'></button></div>
+          <p>Amend the contract details.</p>
+          <div class='task__stats'>
+            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+            <span><i class="fas fa-comment"></i>8</span>
+            <span><i class="fas fa-paperclip"></i>16</span>
+            <span class='task__owner'></span>
+          </div>
+        </div>
+        
+        </div>
+    </div>
+  </main>
+  <aside class='task-details'>
+    <div class='tag-progress'>
+      <h2><u>Nuevo contenido!!!</u> 🔥​</h2>
+      <div class='tag-progress'>
+        <p>Cantidad de artículos: <span>10/200</span></p>
+        <progress class="progress progress--copyright" max="10" value="3"> 3 </progress>
+      </div>
+      <div class='tag-progress'>
+        <p>Calidad de artículos:<span>Media</span></p>
+        <progress class="progress progress--illustration" max="10" value="5"> 6 </progress>
+      </div>
+      <div class='tag-progress'>
+        <p>Satisfacción del público: <span>7/10</span></p>
+        <progress class="progress progress--design" max="10" value="7"> 2 </progress>
+      </div>
+    </div>
+    <div class='task-activity'>
+      <h2><u>Próxima actividad:</u></h2>
+      <ul>
+        <li>
+          <span class='task-icon task-icon--attachment'><i class="fas fa-paperclip"></i></span>
+          Publicación de nuevo contenido de <b>Historia</b>
+          <time datetime="2021-11-24T20:00:00">Aug 10</time>
+        </li>
+          <li>
+              <span class='task-icon task-icon--comment'><i class="fas fa-comment"></i></span>
+           Descuento en uno de nuestros <b>mejores</b> libros.
+          <time datetime="2021-11-24T20:00:00">Aug 10</time>
+        </li>
+         <li>
+             <span class='task-icon task-icon--edit'><i class="fas fa-pencil-alt"></i></span>
+          Super descuento en nuestro plan <b>Premium </b>
+          <time datetime="2021-11-24T20:00:00">Aug 11</time>
+        </li>
+      </ul>
+    </div>
+  </aside>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
